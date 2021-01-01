@@ -1,0 +1,26 @@
+[package]
+name = "assistant"
+version = "0.1.0"
+authors = ["Joel Winarske <joel.winarske@linux.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures-util = "0.3.8"
+gouth = { version = "0.1" }
+tonic = { version = "0.3", features = ["tls"] }
+prost = { version = "0.6" }
+prost-types = { version = "0.6" }
+tokio = { version = "0.2", features = ["rt-threaded", "time", "stream", "fs", "macros", "uds"] }
+cpal = "0.13.1"
+dasp_interpolate = { version = "0.11.0", features = ["sinc"] }
+dasp_ring_buffer = "0.11.0"
+dasp_sample = "0.11.0"
+dasp_signal = "0.11.0"
+# use dasp::{interpolate::sinc::Sinc, ring_buffer, signal, Sample, Signal};
+
+
+[build-dependencies]
+git2 = "0.13.14"
+tonic-build = "0.3.1"
