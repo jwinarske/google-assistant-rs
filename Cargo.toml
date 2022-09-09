@@ -12,7 +12,7 @@ gouth = { version = "0.1" }
 tonic = { version = "0.3", features = ["tls"] }
 prost = { version = "0.6" }
 prost-types = { version = "0.6" }
-tokio = { version = "0.2", features = ["rt-threaded", "time", "stream", "fs", "macros", "uds"] }
+tokio = { version = "1.8", features = ["time", "fs", "macros", "rt"] }
 cpal = "0.13.1"
 dasp_interpolate = { version = "0.11.0", features = ["sinc"] }
 dasp_ring_buffer = "0.11.0"

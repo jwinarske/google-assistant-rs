@@ -114,7 +114,7 @@ fn audio_info() -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
-#[tokio::main(basic_scheduler)]
+#[tokio::main(flavor = "current_thread")]
 pub async fn main() -> Result<(), Box<dyn Error>> {
 
     //
