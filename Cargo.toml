@@ -13,8 +13,8 @@ edition = "2018"
 futures-util = "0.3.8"
 gouth = { version = "0.1" }
 tonic = { version = "0.3", features = ["tls"] }
-prost = { version = "0.6" }
-prost-types = { version = "0.6" }
+prost = { version = "0.8" }
+prost-types = { version = "0.8" }
 tokio = { version = "1.8", features = ["time", "fs", "macros", "rt"] }
 cpal = "0.13.1"
 dasp_interpolate = { version = "0.11.0", features = ["sinc"] }
@@ -25,5 +25,5 @@ dasp_signal = "0.11.0"
 
 
 [build-dependencies]
-git2 = "0.13.14"
+git2 = "0.16.1"
 tonic-build = "0.3.1"
